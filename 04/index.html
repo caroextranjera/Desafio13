@@ -23,8 +23,8 @@ var data = prompt("Por favor agrega un nombre a la lista");
 if (data != null) {
     $(".names").append('<li>'+'<span>'+ data +'</span>'+'<button class:"revome_name">'+'-'+'</button>'+'</li>');	
 
-$("li").on("click", function(){
-	$(this).parent().remove();
+$(".names").on("click", function(){
+	$(this).parent("li").remove();
 });
  
 }}); 
